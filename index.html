@@ -53,6 +53,44 @@ Embora o conceito de DVCS exista desde há algum tempo, só muito recentemente �
 			<p align="justify">SVN possui um repositório central de onde os usuários fazem o CHECKOUT e COMMIT dos artefatos versionados.
 			<p align="justify">A vantagem dessa abordagem é que você pode ter um controle central sobre os projetos, impor segurança de acesso mais facilmente. Além disso, há a possibilidade de bloquear arquivos (<i>lock</i>).
 			<p align="justify">Porém, existem muitas desvantagens. A principal delas é que esse tipo de sistema não escala muito bem, isto é, muitas equipes e projetos no mesmo repositório tendem a deixá-lo lento. Outra desvantagem importante é que os usuários não podem fazer muita coisa <i>offline</i>, sendo necessário sempre estar conectado ao servidor central para realizar operações como criar <i>tags</i>, <i>branches</i>, fazer <i>merge</i>, etc.
-
+		<h1><b>Vantagens</h1></b>
+			
+			<p align="justify">-É mais fácil aprender e usar e se encaixa mais na intuição dos programadores.
+			
+			<p align="justify">-Se comporta mais como um controle de versão de arquivos em geral
+			
+			<p align="justify">-Um único repositório canônico é mais adequado à filosofia corporativa permitindo maior controle e facilitando a administração.
+			
+			<p align="justify">-Permite trabalhar com partes dos repositório. Permite montar <i>changesets</i>.
+			
+			<p align="justify">-<i>Backup</i> é muito simples.
+			
+			<p align="justify">-Permite travar arquivos impedindo atualizações.
+			
+			<p align="justify">-Usa número de versão sequencial que simplifica navegar pelas versões.
+		
+			<p align="justify">-Controle de privilégios de acesso mais sofisticados.
+		
+			<p align="justify">-Mais fácil para trabalhar com arquivos binários, especialmente os grandes.
+			
+			<p align="justify">-Trabalha melhor com arquivos renomeados.
+			
+			<p align="justify">-Preserva o timestamp dos arquivos* (pelo menos em algumas situações).
+			
+			<p align="justify">-Dá mais liberdade na forma de trabalhar e organizar o projeto.
+			
+			<p align="justify">-Branches são apenas uma parte do repositório (para o bem ou para o mal).
+			
+			<p align="justify">-Como ele só trabalha com os arquivos, uma cópia inicial do repositório é relativamente rápida.
+			
+			<p align="justify">-Desincentiva fluxos de trabalho muitos complexos (sim, isto é uma vantagem).
+			
+			<p align="justify">-Está mais maduro, especialmente no Windows e utilização com GUI.
+			
+		<h1><b>Desvantagens</h1></b>
+			
+			<p align="justify">-Precisa estar conectado para dar commit (dependendo do caso de uso, não é desvantagem).
+			
+			<p align="justify">-Os branchs são obrigatóriamente criados no servidor, o que pode não ser legal.
  </body>
 </html>
