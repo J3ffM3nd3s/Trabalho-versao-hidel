@@ -38,6 +38,19 @@ O Git por exemplo, é um sistema que foi desenvolvido para controle de versão. 
 		<h1><b><i>Terceiro estágio: Staging Área – Área de teste</i></b></h1>
 			<p align="justify"> Depois que se der o comando Git commit, os arquivos vão para o repositório final, o Git Directory, que é a base de onde foram pegos. 
 			<p align="justify"> É justamente essa divisão que torna o Git uma ferramenta diferenciada, confiável e flexível se comparada as demais ferramentas de controle de versionamento resultando em um trabalho mais simples e rápido.
+		
+		
+		<div><center><img class="irc_mi" src="https://images.clipartlogo.com/files/images/20/20695/subversion_p.png" alt="Imagem relacionada" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" width="195" height="170" style="margin-top: 92px;"/></center></div>
+		
+		<h1><b><i>SVN:Subversion - Introdução</h1></b></i>
+			<p align="justify">É a evolução do modelo do CVS que resolve bem várias limitações do CVS, como a introdução dos comandos RENAME e MOVE, que não apenas renomeia/move o arquivo como mantém seu histórico de alterações, o comando COMMIT ser verdadeiramente atômico, suportando reollbacks em caso de falhas e versionamento de arquivos não suportados pelo CVS, como links simbólicos.
+			<p align="justify">O SVN possui também a capacidade de guardar metadados dos arquivos e diretórios (extensões ignoradas, histórico de merges, etc...)
 			
+		<h1><b><i>Sistema de versionamento centralizado</h1></b></i>		
+			<p align="justify">SVN possui um repositório central de onde os usuários fazem o CHECKOUT e COMMIT dos artefatos versionados.
+			<p align="justify">A vantagem dessa abordagem é que você pode ter um controle central sobre os projetos, impor segurança de acesso mais facilmente. Além disso, há a possibilidade de bloquear arquivos (<i>lock</i>).
+			<p align="justify">Porém, existem muitas desvantagens. A principal delas é que esse tipo de sistema não escala muito bem, isto é, muitas equipes e projetos no mesmo repositório tendem a deixá-lo lento. Outra desvantagem importante é que os usuários não podem fazer muita coisa <i>offline</i>, sendo necessário sempre estar conectado ao servidor central para realizar operações como criar <i>tags</i>, <i>branches</i>, fazer <i>merge</i>, etc.
+			<p align="justify">
 	</body>
 </html>
+
