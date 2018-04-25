@@ -14,32 +14,31 @@
 
  <body background="img/fundo.jpg" >
 
-
- <body>
-	<div id="texto" align="center"> 
-	<h1>Diferença entre</h1>  
- 	</div>                     
-	<div id="img" align="center">                                                                   
-  	<img src="img/git-vs-svn.jpg" />
-	</div>                
+ <body>                   
+	 
+	<div id="img" align="center">  
+	<img class="imagem_artigo" src="img/git-vs-svn.jpg" width="640">                                                                 
+	</div> 
+               
 <br>
 
-      <h2>Sistema de controle de  versionamento</h2>
+      <h1>Sistema de controle de  versionamento</h1>
             <p> Os sistemas de versionamentos ou sistema de controle de versão, surgiram há bastante tempo, em meados da década de 70, porém, só depois de uma década, surgiu um que formou a base de arquitetura que conhecemos nos dias atuais. Anos depois vem a evolução tornando praticável o uso desses sistemas.</p>
       
-       <h2>O que é e para que servi?</h2>
+       <h1>O que é e para que servi?</h1>
             <p> Sistemas de controle de versão são sistemas que gerenciam e registram todas as alterações feitas em um arquivo ou conjunto de arquivos de forma a lhe permitir, futuramente, a recuperação especifica, quando for necessário. Esses sistemas, permitem que voltemos no tempo, para pegar versões especifica e usá-las como base ou até mesmo reverter a versão do software ou sistema que já tenha ou esteja sendo desenvolvido.
             Podendo eles serem classificados em dois tipos: Centralizado e Distribuído.  </p>                
         
-        <h2>Diferença entre sistema centralizado e sistema distribuído</h2>
+        <h1>Diferença entre sistema centralizado e sistema distribuído</h1>
             <p> Ambos possuem Repositórios, estação de trabalho, mas, a principal diferença entre eles está em como cada um é arranjado.</p>
 <br>   
 
 <!-- INCIO GIT -->
 
-<div id="img" align="center">                                                                   
-  	<img src="img/logogit.png" />
-	</div> 
+<div id="img" align="center">  
+<img class="imagem_artigo" src="img/logogit.png" width="640">                                                                 
+</div> 
+
 
 <p>O Git é uma ferramenta de controle de versão de arquivos que facilita em muito o trabalho de equipas que desenvolvem em simultâneo um projecto. Descubra as vantagens e desvantagens deste sistema de controle de versão distribuído.
 </p>
@@ -50,13 +49,13 @@
 <p>Embora o conceito de DVCS exista desde há algum tempo, só muito recentemente é que as funcionalidades se tornaram suficientemente eficientes para captar o interesse de vários projectos open source. Foi assim, que estes decidiram migrar ou expandir os seus suportes do Subversion (sistema centralizado) para sistemas de controlo distribuídos como o Mercurial, o Git e o Bazaar.
 </p>
 
-<h2>Vantagens do Controlo de Versão Distribuído</h2>
+<h1>Vantagens do Controlo de Versão Distribuído</h1>
 
 <p>Em termos de gestão, os DVCS contribuem para facilitar a missão das equipas de trabalho, de modo a que exerçam as suas tarefas da melhor forma, e vêm ajudar à redução de custos.</p>
 
 <p>Mas os principais benefícios deste tipo de opção estão relacionados com a distribuição do processamento, acarretando vantagens em termos de redundância e/ou replicação de repositórios e permitindo alargar as possibilidades de colaboração e parceria entre programadores.</p>
 
-<h2>Benefícios para os programadores</h2>
+<h1>Benefícios para os programadores</h1>
 
 <p><b>Rapidez:</b> como os processos são operados localmente, deixa de ser preciso contactar o servidor central para proceder a operações como um commit, log ou diff</p>
 <p><b>Autonomia:</b> permite trabalhar em modo desconectado, em qualquer local, só sendo necessária uma conexão com a rede para troca de revisões com outros repositórios.</p>
@@ -69,7 +68,7 @@ o trabalho local faz-se num ramo individual que não tem interferência com os d
 Confiabilidade: com um sistema centralizado, qualquer problema que surja no servidor vai parar todo o trabalho de desenvolvimento. Um sistema distribuído permite que a equipa continue a trabalhar e os repositórios dos programadores servem como cópias de backup, não havendo riscos de perder nada do projecto.</p>
 <p><b>Redução de custos com o servidor:</b> o repositório "central" (se ele existir) funciona como repositório "oficial", ao invés de ter uma função de processador central dos pedidos. Assim, a carga de processamento é distribuída pelas máquinas dos programadores.</p>
 
-<h2>Maior complexidade é grande desvantagem dos DVCS</h2>
+<h1>Maior complexidade é grande desvantagem dos DVCS</h1>
 
 <p>No sistema centralizado, os programadores trabalham no mesmo ramo, quer este seja principal ou de manutenção. É um processo simples e fácil de compreender e até alguém com um conhecimento limitado do controle de versão, consegue entender-se com a restante equipa.</p>
 <br>
@@ -107,71 +106,63 @@ O modelo puramente distribuído não é adequado para lidar com travamento justa
 <br>
 
 <!-- INCIO SVN -->	
-<div id="img" align="center">                                                                   
-  <img src="img/logosvn.png" />
+<div id="img" align="center">  
+<img class="imagem_artigo" src="img/logosvn.png" width="640">                                                                 
 </div> 
 
+<p>O SVN é a evolução do modelo do CVS que resolve bem várias limitações do CVS, como a introdução dos comandos RENAME e MOVE, que não apenas renomeia/move o arquivo como mantém seu histórico de alterações, o comando COMMIT ser verdadeiramente atômico, suportando reollbacks em caso de falhas e versionamento de arquivos não suportados pelo CVS, como links simbólicos.</p>
 
-<h1>SVN:Subversion - Introdução</h1>
-<p>É a evolução do modelo do CVS que resolve bem várias limitações do CVS, como a introdução dos comandos RENAME e MOVE, que não apenas renomeia/move o arquivo como mantém seu histórico de alterações, o comando COMMIT ser verdadeiramente atômico, suportando reollbacks em caso de falhas e versionamento de arquivos não suportados pelo CVS, como links simbólicos.</p>
+<p>O SVN possui também a capacidade de guardar metadados dos arquivos e diretórios (extensões ignoradas, histórico de merges, etc...)
+</p>
+<p>O Subversion é um sistema de controle de versão centralizado que consiste em um cliente (o SVN) e um servidor central, acessado por meio de TCP/IP, geralmente via SSH ou HTTP/WebDAV. Desenvolvido inicialmente pela CollabNet no final de 2000, e integrante do projeto Apache desde 2010, o SVN foi adotado em muitos projetos da comunidade Java devido à sua integração com as ferramentas de desenvolvimento, além de resolver problemas do seu antecessor - o CVS - ao incluir o suporte transacional e melhorias de performance na comunicação entre cliente e servidor.</p>
 
-<p align="justify">O SVN possui também a capacidade de guardar metadados dos arquivos e diretórios (extensões ignoradas, histórico de merges, etc...)
-<p align="justify">O Subversion é um sistema de controle de versão centralizado que consiste em um cliente (o SVN) e um servidor central, acessado por meio de TCP/IP, geralmente via SSH ou HTTP/WebDAV. Desenvolvido inicialmente pela CollabNet no final de 2000, e integrante do projeto Apache desde 2010, o SVN foi adotado em muitos projetos da comunidade Java devido à sua integração com as ferramentas de desenvolvimento, além de resolver problemas do seu antecessor - o CVS - ao incluir o suporte transacional e melhorias de performance na comunicação entre cliente e servidor.
--			
--		<h1><b>SVN Subversion</h1></b>	
--			<p align="justify">pache Subversion (também conhecido como SVN) é um sistema de controle de versão de código aberto, criado em 2000 pela CollabNet e é atualmente um software mantido como um projeto da Apache Software Foundation. Foi desenvolvido para funcionar de forma similar ao CVS, mas corrigindo algumas falhas de seu antecessor e para prover algumas funcionalidades não existentes no CVS. O SVN é multiplataforma (tanto no que tange o servidor quanto os clientes) e pode ser usado por clientes com diferentes sistemas operacionais acessando um mesmo servidor que mantém o repositório.
--			<p align="justify">O SVN é um sistema de versionamento flexível, que mantém o histórico mesmo após a ocorrência de eventos como mover, copiar ou renomear. Essas três características não estão presentes em muitos sistemas de controle de versão, mais notavelmente no CVS. Além disso, o SVN trabalha com o conceito e atomicidade nas operações, não permitindo operações parciais, que poderiam prejudicar a consistência do repositório.
--			<p align="justify">A arquitetura proposta pelo SVN é semelhante à de um cliente-servidor, conforme ilustrado na Figura 1. No servidor temos os repositórios e os diversos clientes que acessam este repositório tanto para enviar quanto para receber atualizações. Cada usuário mantém uma cópia local do conjunto de arquivos que faz parte do projeto e sincroniza esses arquivos periodicamente com o servidor SVN. Do lado do servidor o administrador gerencia os repositórios e as permissões dos usuários de acordo com as necessidades do projeto. Já do lado do cliente o acesso ao repositório se dá por meio da configuração da localização do repositório, que pode ser um endereço local ou uma URL da internet, e da autenticação do usuário que recebeu previamente a permissão para acesso ao repositório, que pode ser só de leitura ou de leitura e escrita.
--		
--			<center><img class="imagem_artigo" src="http://arquivo.devmedia.com.br/REVISTAS/es/imagens/72/7/1.png" width="640"></center>
--			
--			<p align="justify"><b>Figura 1</b> Diversos clientes acessam o mesmo repositório
--
--			<p align="justify">A ferramenta utilizada pelo desenvolvedor para atuar como cliente funciona através de linhas de comandos e pode ter ainda uma interface gráfica que permita a integração com o explorador de sistema de arquivos do sistema operacional utilizado. Caso seja utilizado no projeto um ambiente de desenvolvimento integrado (IDE, na sigla em inglês), é possível ainda a integração entre o cliente SVN e essa ferramenta, seja através de plug-ins ou suporte nativo da ferramenta.
- 
--					  
--		<h1><b><i>Sistema de versionamento centralizado</h1></b></i>		
--			<p align="justify">SVN possui um repositório central de onde os usuários fazem o CHECKOUT e COMMIT dos artefatos versionados.
--			<p align="justify">A vantagem dessa abordagem é que você pode ter um controle central sobre os projetos, impor segurança de acesso mais facilmente. Além disso, há a possibilidade de bloquear arquivos (<i>lock</i>).
--			<p align="justify">Porém, existem muitas desvantagens. A principal delas é que esse tipo de sistema não escala muito bem, isto é, muitas equipes e projetos no mesmo repositório tendem a deixá-lo lento. Outra desvantagem importante é que os usuários não podem fazer muita coisa <i>offline</i>, sendo necessário sempre estar conectado ao servidor central para realizar operações como criar <i>tags</i>, <i>branches</i>, fazer <i>merge</i>, etc.
--		<h1><b>Vantagens</h1></b>
--			
--			<p align="justify">-É mais fácil aprender e usar e se encaixa mais na intuição dos programadores.
--			
--			<p align="justify">-Se comporta mais como um controle de versão de arquivos em geral
--			
--			<p align="justify">-Um único repositório canônico é mais adequado à filosofia corporativa permitindo maior controle e facilitando a administração.
--			
--			<p align="justify">-Permite trabalhar com partes dos repositório. Permite montar <i>changesets</i>.
--			
--			<p align="justify">-<i>Backup</i> é muito simples.
--			
--			<p align="justify">-Permite travar arquivos impedindo atualizações.
--			
--			<p align="justify">-Usa número de versão sequencial que simplifica navegar pelas versões.
--		
--			<p align="justify">-Controle de privilégios de acesso mais sofisticados.
--		
--			<p align="justify">-Mais fácil para trabalhar com arquivos binários, especialmente os grandes.
--			
--			<p align="justify">-Trabalha melhor com arquivos renomeados.
--			
--			<p align="justify">-Preserva o timestamp dos arquivos* (pelo menos em algumas situações).
--			
--			<p align="justify">-Dá mais liberdade na forma de trabalhar e organizar o projeto.
--			
--			<p align="justify">-Branches são apenas uma parte do repositório (para o bem ou para o mal).
--			
--			<p align="justify">-Como ele só trabalha com os arquivos, uma cópia inicial do repositório é relativamente rápida.
--			
--			<p align="justify">-Desincentiva fluxos de trabalho muitos complexos (sim, isto é uma vantagem).
--			
--			<p align="justify">-Está mais maduro, especialmente no Windows e utilização com GUI.
--			
--		<h1><b>Desvantagens</h1></b>
--			
--			<p align="justify">-Precisa estar conectado para dar commit (dependendo do caso de uso, não é desvantagem).
--			
--			<p align="justify">-Os branchs são obrigatóriamente criados no servidor, o que pode não ser legal.
+<h1>SVN Subversion</h1>	
+
+<p>Pache Subversion (também conhecido como SVN) é um sistema de controle de versão de código aberto, criado em 2000 pela CollabNet e é atualmente um software mantido como um projeto da Apache Software Foundation. Foi desenvolvido para funcionar de forma similar ao CVS, mas corrigindo algumas falhas de seu antecessor e para prover algumas funcionalidades não existentes no CVS. O SVN é multiplataforma (tanto no que tange o servidor quanto os clientes) e pode ser usado por clientes com diferentes sistemas operacionais acessando um mesmo servidor que mantém o repositório.
+</p>
+
+<p>O SVN é um sistema de versionamento flexível, que mantém o histórico mesmo após a ocorrência de eventos como mover, copiar ou renomear. Essas três características não estão presentes em muitos sistemas de controle de versão, mais notavelmente no CVS. Além disso, o SVN trabalha com o conceito e atomicidade nas operações, não permitindo operações parciais, que poderiam prejudicar a consistência do repositório.
+</p>
+<p>A arquitetura proposta pelo SVN é semelhante à de um cliente-servidor, conforme ilustrado na Figura 1. No servidor temos os repositórios e os diversos clientes que acessam este repositório tanto para enviar quanto para receber atualizações. Cada usuário mantém uma cópia local do conjunto de arquivos que faz parte do projeto e sincroniza esses arquivos periodicamente com o servidor SVN. Do lado do servidor o administrador gerencia os repositórios e as permissões dos usuários de acordo com as necessidades do projeto. Já do lado do cliente o acesso ao repositório se dá por meio da configuração da localização do repositório, que pode ser um endereço local ou uma URL da internet, e da autenticação do usuário que recebeu previamente a permissão para acesso ao repositório, que pode ser só de leitura ou de leitura e escrita.
+</p>
+
+
+<div id="img" align="center">  
+<img class="imagem_artigo" src="img/svn1.png" width="640">                                                                 
+</div> 
+
+<center><b>Figura 1</b> Diversos clientes acessam o mesmo repositório</center>
+
+<p>A ferramenta utilizada pelo desenvolvedor para atuar como cliente funciona através de linhas de comandos e pode ter ainda uma interface gráfica que permita a integração com o explorador de sistema de arquivos do sistema operacional utilizado. Caso seja utilizado no projeto um ambiente de desenvolvimento integrado (IDE, na sigla em inglês), é possível ainda a integração entre o cliente SVN e essa ferramenta, seja através de plug-ins ou suporte nativo da ferramenta.</p>
+ 				  
+<h1>Sistema de versionamento centralizado</h1>	
+<p>SVN possui um repositório central de onde os usuários fazem o CHECKOUT e COMMIT dos artefatos versionados.</p>
+<p>A vantagem dessa abordagem é que você pode ter um controle central sobre os projetos, impor segurança de acesso mais facilmente. Além disso, há a possibilidade de bloquear arquivos (<i>lock</i>).</p>
+<p>Porém, existem muitas desvantagens. A principal delas é que esse tipo de sistema não escala muito bem, isto é, muitas equipes e projetos no mesmo repositório tendem a deixá-lo lento. Outra desvantagem importante é que os usuários não podem fazer muita coisa <i>offline</i>, sendo necessário sempre estar conectado ao servidor central para realizar operações como criar <i>tags</i>, <i>branches</i>, fazer <i>merge</i>, etc.</p>
+<h1>Vantagens</h1>
+
+<p>- É mais fácil aprender e usar e se encaixa mais na intuição dos programadores.</p>
+<p>- Se comporta mais como um controle de versão de arquivos em geral</p>
+<p>- Um único repositório canônico é mais adequado à filosofia corporativa permitindo maior controle e facilitando a administração.</p>
+<p>- Permite trabalhar com partes dos repositório. Permite montar <i>changesets</i>.</p>
+<p>- <i>Backup</i> é muito simples.</p>
+<p>- Permite travar arquivos impedindo atualizações.</p>
+<p>- Usa número de versão sequencial que simplifica navegar pelas versões.</p>
+<p>- Controle de privilégios de acesso mais sofisticados.</p>
+<p>- Mais fácil para trabalhar com arquivos binários, especialmente os grandes.</p>
+<p>- Trabalha melhor com arquivos renomeados.</p>
+<p>- Preserva o timestamp dos arquivos* (pelo menos em algumas situações).</p>
+<p>- Dá mais liberdade na forma de trabalhar e organizar o projeto.</p>
+<p>- Branches são apenas uma parte do repositório (para o bem ou para o mal).</p>
+<p>- Como ele só trabalha com os arquivos, uma cópia inicial do repositório é relativamente rápida.</p>
+<p>- Desincentiva fluxos de trabalho muitos complexos (sim, isto é uma vantagem).</p>
+<p>- Está mais maduro, especialmente no Windows e utilização com GUI.</p>
+
+<h1>Desvantagens</h1>
+
+<p>- Precisa estar conectado para dar commit (dependendo do caso de uso, não é desvantagem).</p>
+<p>- Os branchs são obrigatóriamente criados no servidor, o que pode não ser legal.</p>
+
 </body>
+
 </html>
