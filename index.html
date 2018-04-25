@@ -6,19 +6,25 @@
 <style type="text/css">
 body {
 	color: #000;
-	font: 12px Verdana, sans-serif;
+	font: 15px Verdana, sans-serif;
 	}
 
 #conteudo {
-	width: 70%;
-	float: right;
+	
+
 	text-align: center;
+    margin: 150px;
+    margin-top: %;
+    
+
 	}
 
 #menu {
-	width: 30%;
+	
 	margin: 0; padding: 0;
-	float: left;
+	margin-bottom: 200px;
+    margin-left: 20%;
+   
 
 	}
 
@@ -27,6 +33,8 @@ body {
 	border-bottom: 1px solid #CCC;
 	text-align: left;
 	list-style-type: none;
+	display: inline-block;
+	
 	}
 
 
@@ -53,45 +61,6 @@ body {
 
 <body>
 
-<div>
-	<center><img src="img/versionadores.jpg"/></center>
-
-</div>
-
-<div id="conteudo">
-
-   <h1><b><i><center>SISTEMA DE CONTROLE DE VERSIONAMENTO</center></i></b></h1>
-   <p align="justify"> Os sistemas de versionamentos ou sistema de controle de versão, surgiram há bastante tempo, em meados da década de 70, porém, só depois de uma década, surgiu um que formou a base de arquitetura que conhecemos nos dias atuais. Anos depois vem a evolução tornando praticável o uso desses sistemas.
-	<h1><b><i>O QUE É E PARA QUE SERVE?</i></b></h1>
-		<p align="justify">Sistemas de controle de versão são sistemas que gerenciam e registram todas as alterações feitas em um arquivo ou conjunto de arquivos de forma a lhe permitir, futuramente, a recuperação especifica, quando for necessário. Esses sistemas, permitem que voltemos no tempo, para pegar versões especifica e usá-las como base ou até mesmo reverter a versão do software ou sistema que já tenha ou esteja sendo desenvolvido.
-		<p align="justify">Podendo eles serem classificados em dois tipos: Centralizado e Distribuído. 
-	<h1><b><i>DIFERENÇA ENTRE SISTEMA CENTRALIZADO E SISTEMA DISTRIBUÍDO</i></b></h1>
-		<p align="justify">Ambos possuem repositórios estação de trabalho, mas, a principal diferença entre eles está em como cada um é arranjado.
-		<br>
-					<center><img src="img/amostra.jpg"></center>
-	
-	<h1><b><i>SISTEMA CENTRALIZADO</i></b></h1>
-		<p align="justify"> São sistemas de fácil aprendizado em relação a outros sistemas e eles trabalham apenas com um servidor central e diversas estações de trabalho uma para cada desenvolvedor. É a partir da estação que os desenvolvedores conseguem visualizar e compartilhar seu trabalho com os colaboradores, gerando um fluxo de dados, que obrigatoriamente, precisa passar pelo repositório.
-		<p align="justify">Os sistemas centralizados oferecem muitas vantagens como: controle central sobre as contribuições que foram realizadas, o responsável consegue fazer uma administração mais facilmente controlada das atualizações que foram feitas por cada desenvolvedor que faz parte do projeto.
-	<h1><b><i>DESVANTAGEM </i></b></h1>
-		<p align="justify">Por ser centralizado ele acaba se tornando um ponto único de falha e pode trazer risco a um projeto, por exemplo, se o servidor que abriga o repositório ficar indisponível por um determinado tempo, nenhuma das estações poderá ter acesso as alterações feitas no período anterior, sendo impossibilitado o seu acesso aos incrementos feitos por outros desenvolvedores. 
-		<br>
-					<center><img src="img/modelocentralizado.png"></center>
-	<h1><b><i>SISTEMA DISTRIBUIDO</i></b></h1>
-		<p align="justify">Nos sistemas distribuídos, os desenvolvedores do projeto fazem copias completas do repositório e não ficam dependentes remotamente do mesmo. O maior benefício desse tipo de sistema é que qualquer um dos colaboradores poderá ter uma cópia completa do repositório ou da ramificação do projeto na sua estação de trabalho. Dessa forma a redundância do sistema é aumentado e por consequência acaba eliminando o ponto de falha, pois, ele deixa de ser centralizado e acaba se tornando flexível. Essa característica não será encontrada nos sistemas centralizados.
-		<p align="justify">Podemos destacar também, nos sistemas distribuídos, a comunicação entre si das estações de trabalho, podendo usar um servidor remoto para centralizar o fluxo de dados.
-		<p align="justify">Por serem flexíveis, os sistemas distribuídos são mais complexos, porém, mais vantajosos e são mais interessantes para as equipes que trabalham simultaneamente no mesmo projeto com grandes grupos de pessoas.
-		<br>
-					<center><img src="img/modelodistribuido.png"></center>
-	
-		<p align="justify">Os dois tipos de sistema de versão além de extremamente úteis se destacam se compararmos com sistemas de controle manual de projeto. O sistema centralizado dispõe de um servidor central e varias estações de trabalho e forma uma topologia de rede estrela. O sistema distribuído permite múltiplos repositórios locais ao invés de um repositório remoto centralizado e o  acesso a rede só é necessário quando houver a publicação das alterações ou quando for preciso verificar as mudanças que foram realizadas pelos demais colaboradores do projeto.
-		
-	
-	<h1><b><i>COMPARAÇÃO ENTRE SISTEMA CENTRALIZADO E SISTEMA DISTRIBUIDO</i></b></h1>
-		<br>
-					<center><img src="img/comparativo.jpg"></center>
-</div>
-
 <div id="menu">
   <ul>
     <li><a href="index.html">Início</a></li>
@@ -102,6 +71,68 @@ body {
     <li><a href="gitvssvn.html">Git vs SVN</a></li>
   </ul>
 </div>
+
+
+<div id="conteudo">
+
+  
+	<center><img class="imagem" src="img/versionadores.jpg"></center>
+
+
+
+
+   <h1><center>SISTEMA DE CONTROLE DE VERSIONAMENTO</center></h1>
+
+   <p align="justify"> Os sistemas de versionamentos ou sistema de controle de versão, surgiram há bastante tempo, em meados da década de 70, porém, só depois de uma década, surgiu um que formou a base de arquitetura que conhecemos nos dias atuais. Anos depois vem a evolução tornando praticável o uso desses sistemas.</p>
+
+	<h1>O QUE É E PARA QUE SERVE?</h1>
+
+		<p align="justify">Sistemas de controle de versão são sistemas que gerenciam e registram todas as alterações feitas em um arquivo ou conjunto de arquivos de forma a lhe permitir, futuramente, a recuperação especifica, quando for necessário. Esses sistemas, permitem que voltemos no tempo, para pegar versões especifica e usá-las como base ou até mesmo reverter a versão do software ou sistema que já tenha ou esteja sendo desenvolvido.</p>
+
+		<p align="justify">Podendo eles serem classificados em dois tipos: Centralizado e Distribuído.</p>
+
+	<h1>DIFERENÇA ENTRE SISTEMA CENTRALIZADO E SISTEMA DISTRIBUÍDO</h1>
+
+		<p align="justify">Ambos possuem repositórios estação de trabalho, mas, a principal diferença entre eles está em como cada um é arranjado.</p>
+
+		<br>
+	<center><img src="img/amostra.jpg"></center>
+	
+	<h1>SISTEMA CENTRALIZADO</h1>
+
+		<p align="justify"> São sistemas de fácil aprendizado em relação a outros sistemas e eles trabalham apenas com um servidor central e diversas estações de trabalho uma para cada desenvolvedor. É a partir da estação que os desenvolvedores conseguem visualizar e compartilhar seu trabalho com os colaboradores, gerando um fluxo de dados, que obrigatoriamente, precisa passar pelo repositório.</p>
+
+		<p align="justify">Os sistemas centralizados oferecem muitas vantagens como: controle central sobre as contribuições que foram realizadas, o responsável consegue fazer uma administração mais facilmente controlada das atualizações que foram feitas por cada desenvolvedor que faz parte do projeto.</p>
+
+	<h1>DESVANTAGEM</h1>
+
+		<p align="justify">Por ser centralizado ele acaba se tornando um ponto único de falha e pode trazer risco a um projeto, por exemplo, se o servidor que abriga o repositório ficar indisponível por um determinado tempo, nenhuma das estações poderá ter acesso as alterações feitas no período anterior, sendo impossibilitado o seu acesso aos incrementos feitos por outros desenvolvedores.</p>
+
+		<br>
+					<center><img src="img/modelocentralizado.png"></center>
+
+	<h1>SISTEMA DISTRIBUIDO</h1>
+
+		<p align="justify">Nos sistemas distribuídos, os desenvolvedores do projeto fazem copias completas do repositório e não ficam dependentes remotamente do mesmo. O maior benefício desse tipo de sistema é que qualquer um dos colaboradores poderá ter uma cópia completa do repositório ou da ramificação do projeto na sua estação de trabalho. Dessa forma a redundância do sistema é aumentado e por consequência acaba eliminando o ponto de falha, pois, ele deixa de ser centralizado e acaba se tornando flexível. Essa característica não será encontrada nos sistemas centralizados.</p>
+
+		<p align="justify">Podemos destacar também, nos sistemas distribuídos, a comunicação entre si das estações de trabalho, podendo usar um servidor remoto para centralizar o fluxo de dados.</p>
+
+		<p align="justify">Por serem flexíveis, os sistemas distribuídos são mais complexos, porém, mais vantajosos e são mais interessantes para as equipes que trabalham simultaneamente no mesmo projeto com grandes grupos de pessoas.</p>
+
+		<br>
+					<center><img src="img/modelodistribuido.png"></center>
+	
+		<p align="justify">Os dois tipos de sistema de versão além de extremamente úteis se destacam se compararmos com sistemas de controle manual de projeto. O sistema centralizado dispõe de um servidor central e varias estações de trabalho e forma uma topologia de rede estrela. O sistema distribuído permite múltiplos repositórios locais ao invés de um repositório remoto centralizado e o  acesso a rede só é necessário quando houver a publicação das alterações ou quando for preciso verificar as mudanças que foram realizadas pelos demais colaboradores do projeto.</p>
+		
+	
+	<h1>COMPARAÇÃO ENTRE SISTEMA CENTRALIZADO E SISTEMA DISTRIBUIDO</h1>
+		<br>
+					<center><img src="img/comparativo.jpg"></center>
+
+		<br>
+		
+</div>
+
 
 </body>
 
