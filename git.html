@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Git</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="index.html">Inicio <span><span>by GTI3</span></a></div>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="contversion.html">Controle de Versionamento</a></li>
+					<li><a href="svn.html">svn</a></li>
+					<li><a href="git.html">Git</a></li>
+					<li><a href="compsnv.html">VeD svn</a></li>
+					<li><a href="compgit.html">VeD git</a></li>
+				</ul>
+			</nav>
+
+		<!-- One -->
+			<section id="One" class="wrapper style3">
+				<div class="inner">
+					<header class="align-center">
+						<p>O que é e para que serve?</p>
+						<h2>GIT</h2>
+					</header>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper style2">
+				<div class="inner">
+					<div class="box">
+						<div class="content">
+							<header class="align-center">
+								<p></p>
+								<h2>GIT</h2>
+							</header>
+							<p>É um sistemas de controle de versão são sistemas que gerência e registra todas as alterações feitas em um arquivo ou conjunto de arquivos de forma a lhe permitir, futuramente, a recuperação especifica, quando for necessário. Os sistemas de controle de versão, permitem que voltemos no tempo, para pegar versões especifica e usá-las como base ou até mesmo reverter a versão do software ou sistema que já tenha ou esteja sendo desenvolvido. O Git por exemplo, é um sistema que foi desenvolvido para controle de versão. Ele é um sistema que tem muitas aplicações e uma delas é a permissão de várias pessoas trabalhando em um mesmo projeto simultaneamente, sem que haja conflito ou bagunça com os arquivos do projeto.</p>
+
+							<p>O repositório age como um servidor central, ou seja, é onde os dados do projeto e arquivos ficam armazenados. Já as estações estão representando o ambiente onde os programadores estão desenvolvendo o sistema ou software.</p>
+
+							<p>Quando a estação de trabalho quer fazer alguma mudança no software/sistema, ela vai no repositório e pega a versão mais atualizada, traz para o ambiente de trabalho, altera o que for necessário e manda de volta para o repositório. Quando essa nova versão é retornada para o repositório, ela é mesclada com o que havia lá e com todos os outros conteúdos que vieram de outras estações formando assim mais uma nova versão.</p>
+
+							<p>Como a maioria dos sistemas de controle de versão trabalham de forma centralizada, as alterações realizadas num sistema, serão guardadas no repositório e as estações estarão apenas com uma das versões, a mais atualizada, ou seja, a versão que está sendo atualmente trabalhada na estação.</p>
+
+							<p>A principal diferença do Git para os demais sistemas de controle de versionamento é que ele não é um controlador centralizado e sim um sistema distribuído, isso quer dizer que, a cópia de cada versão que está sendo ou foi desenvolvida estará disponível em todas as estações que estiverem trabalhado naquele determinado sistema, permitindo assim, uma velocidade maior por não precisar ficar acessando constantemente o repositório.</p>
+
+							<p>Uma vez baixado o projeto do repositório, todas as estações terão disponiveis, todas as versões e alterações que já foram realizadas. É como que cada estação de trabalho fosse um clone do repositório.</p>
+
+							<p>A forma como o Git trabalha com projetos é outra vantagem bastante peculiar. Cada projeto é dividido em três estágios representado na figura a baixo.</p>
+
+							<h2>Primeiro estágio: Working Directory – Diretório de trabalho</h2>
+							<p>Esse diretório é criado quando se vai no repositório e pega a base do sistema trazendo-o para a estação de trabalho e tudo que está sendo codificado estará dentro do primeiro estágio..</p>
+
+							<h2>Segundo estágio: Staging Área – Área de teste</h2>
+							<p>A partir do momento em que se der um Git add, iniciamos o segundo estágio. Nele, os arquivos que estavam sendo editados vão para um local semelhante ao de uma sala de espera que podemos, também, chamá-la de área de teste. Esta área é o local onde tudo que foi alterado fica antes de ser enviado de volta para o repositório.</p>
+
+							<h2>Terceiro estágio: Staging Área – Área de teste</h2>
+							<p>Depois que se der o comando Git commit, os arquivos vão para o repositório final, o Git Directory, que é a base de onde foram pegos.</p>
+
+							<p>É justamente essa divisão que torna o Git uma ferramenta diferenciada, confiável e flexível se comparada as demais ferramentas de controle de versionamento resultando em um trabalho mais simples e rápido.</p>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Untitled. All rights reserved.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
