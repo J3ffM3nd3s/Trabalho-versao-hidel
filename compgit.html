@@ -32,8 +32,8 @@
 			<section id="One" class="wrapper style3">
 				<div class="inner">
 					<header class="align-center">
-						<p>Eleifend vitae urna</p>
-						<h2>Generic Page Template</h2>
+						<p>Vantagens e Desvantagens </p>
+						<h2> GIT</h2>
 					</header>
 				</div>
 			</section>
@@ -44,14 +44,43 @@
 					<div class="box">
 						<div class="content">
 							<header class="align-center">
-								<p>maecenas sapien feugiat ex purus</p>
-								<h2>Lorem ipsum dolor</h2>
+								<p></p>
+								<h2>GIT</h2>
 							</header>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at dignissim augue, in iaculis neque. Etiam bibendum felis ac vulputate pellentesque. Cras non blandit quam. Nunc porta, est non posuere sagittis, neque nunc pellentesque diam, a iaculis lacus urna vitae purus. In non dui vel est tempor faucibus. Aliquam erat volutpat. Quisque vel est vitae nibh laoreet auctor. In nec libero dui. Nulla ullamcorper, dolor nec accumsan viverra, libero eros rutrum metus, vel lacinia magna odio non nunc. Praesent semper felis eu rhoncus aliquam. Donec at quam ac libero vestibulum pretium. Nunc faucibus vel arcu in malesuada. Aenean at velit odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas commodo erat eget molestie sollicitudin. Donec imperdiet, ex sed blandit dictum, ipsum metus ultrices arcu, vitae euismod nisl sapien vitae tortor.</p>
+							<p><b>Rapidez:</b> como os processos são operados localmente, deixa de ser preciso contactar o servidor central para proceder a operações como um commit, log ou diff</p>
+					<p><b>Autonomia:</b> permite trabalhar em modo desconectado, em qualquer local, só sendo necessária uma conexão com a rede para troca de revisões com outros repositórios.</p>
+					<p><b>Ramos individuais:</b> contrariamente aos chamados sistemas centralizados, combinar ramos não é uma obrigação para cada commit e antes uma decisão que depende do programador; O trabalho local faz-se num ramo individual que não tem interferência com os demais ramos, mesmo em processos de sincronização entre repositórios.</p>
+					<p><b>Facilidade na Fusão:</b> os DVCS usam o rastreamento automático, o que facilita de forma significativa o processo de fusão. Benefícios em termos de Gestão/Coordenação Confiabilidade: com um sistema centralizado, qualquer problema que surja no servidor vai parar todo o trabalho de desenvolvimento. Um sistema distribuído permite que a equipa continue a trabalhar e os repositórios dos programadores servem como cópias de backup, não havendo riscos de perder nada do projecto.</p>
+					<p><b>Redução de custos com o servidor:</b> o repositório "central" (se ele existir) funciona como repositório "oficial", ao invés de ter uma função de processador central dos pedidos. Assim, a carga de processamento é distribuída pelas máquinas dos programadores.</p>
 
-							<p>Vivamus nec odio ac ligula congue feugiat at vitae leo. Aenean sem justo, finibus sed dui eu, accumsan facilisis dolor. Fusce quis dui eget odio iaculis aliquam vel sed velit. Nulla pellentesque posuere semper. Nulla eu sagittis lorem, a auctor nulla. Sed ac condimentum orci, ac varius ante. Nunc blandit quam sit amet sollicitudin sodales.</p>
+					<h2>Maior complexidade é grande desvantagem dos DVCS</h2>
 
-							<p>Vivamus ultricies mollis mauris quis molestie. Quisque eu mi velit. In et cursus nibh. Donec facilisis, orci sed mollis hendrerit, nunc risus mattis odio, eget efficitur nisl orci a lectus. Aenean finibus neque convallis orci sollicitudin tincidunt. Vivamus lacinia facilisis diam, quis facilisis nisi luctus nec. Aliquam ac molestie enim, ut ultrices elit. Fusce laoreet vulputate risus in tincidunt. Sed commodo mollis maximus. Nullam varius laoreet nibh sit amet facilisis. Donec ac odio vehicula, consequat elit et, sodales justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam ac auctor mauris, in hendrerit libero. </p>
+					<p>No sistema centralizado, os programadores trabalham no mesmo ramo, quer este seja principal ou de manutenção. É um processo simples e fácil de compreender e até alguém com um conhecimento limitado do controle de versão, consegue entender-se com a restante equipa.</p>
+
+					<div id="img" align="center">                                                                   
+ 						<img src="img/git2.jpg" />
+					</div> 
+
+					<p>O DVCS é mais complicado. Há diversas combinações de arquiteturas de repositórios e fluxos de trabalho possíveis, o que pode tornar o histórico da evolução do projeto bastante confuso.</p>
+					<div id="img" align="center">                                                                   
+ 						<img src="img/git3.jpg" />
+					</div>
+					<p>Ao contrário do centralizado, não adianta só <b><i>commit e update</i></b> para funcionar "no tranco". Todos os desenvolvedores da equipe precisam ter um conhecimento maior do modelo, da ferramenta e, de preferência, também de um processo de desenvolvimento que padronize fluxos de trabalho a serem seguidos.</p>
+
+					<b>Travamento de Arquivos Binários Precisa Ser Centralizado</b>
+					<p>Diferentemente dos arquivos de texto, arquivos binários possuem um formato interno que não é baseado em linhas de texto e, por isso, não podem ser mesclados automaticamente pelo controle de versão ou manualmente pelo desenvolvedor.</p>
+					<p>Sendo assim, a edição concorrente de arquivos binários é problemática. Duas pessoas editando ao mesmo tempo uma figura, por exemplo, não conseguirão mesclar as modificações depois e o trabalho de uma delas precisará ser refeito. Com arquivos binários, a melhor solução é usar o travamento, isto é, sinalizar que o arquivo está travado para edição e que ninguém mais deve editá-lo enquanto isso.</p>
+					
+					<div id="img" align="center">                                                                   
+ 						 <img src="img/travamento_1.jpg" />                                                                 
+  						<img src="img/travamento_2.jpg" />
+  					</div>
+
+					<p>O modelo puramente distribuído não é adequado para lidar com travamento justamente por não possuir um servidor central que possa controlar as travas de todos.</p>
+
+					<b>Controle de Mudança Ainda é Centralizado</b>
+					<p>As ferramentas de controle de mudança (e.g. Trac, Redmine, Mantis, Bugzilla) ainda não acompanharam as de controle de versão na arquitetura peer-to-peer. Isto significa que mesmo usando um DVCS, ainda haverá uma ferramenta centralizada para controle de mudança.</p>
+
 						</div>
 					</div>
 				</div>

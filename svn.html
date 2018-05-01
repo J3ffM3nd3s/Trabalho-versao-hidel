@@ -22,7 +22,7 @@
 					<li><a href="contversion.html">Controle de Versionamento</a></li>
 					<li><a href="svn.html">svn</a></li>
 					<li><a href="git.html">Git</a></li>
-					<li><a href="compsnv.html">VeD svn</a></li>
+					<li><a href="compsvn.html">VeD svn</a></li>
 					<li><a href="compgit.html">VeD git</a></li>
 					<li><a href="gitvssvn.html">Comprarativo</a></li>
 				</ul>
@@ -32,8 +32,8 @@
 			<section id="One" class="wrapper style3">
 				<div class="inner">
 					<header class="align-center">
-						<p>Eleifend vitae urna</p>
-						<h2>Generic Page Template</h2>
+						<p>O QUE É E PARA QUE SERVE?</p>
+						<h2>SVN - Subversion</h2>
 					</header>
 				</div>
 			</section>
@@ -44,14 +44,31 @@
 					<div class="box">
 						<div class="content">
 							<header class="align-center">
-								<p>maecenas sapien feugiat ex purus</p>
-								<h2>Lorem ipsum dolor</h2>
+								<p></p>
+								<h2>SVN - Subversion</h2>
 							</header>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at dignissim augue, in iaculis neque. Etiam bibendum felis ac vulputate pellentesque. Cras non blandit quam. Nunc porta, est non posuere sagittis, neque nunc pellentesque diam, a iaculis lacus urna vitae purus. In non dui vel est tempor faucibus. Aliquam erat volutpat. Quisque vel est vitae nibh laoreet auctor. In nec libero dui. Nulla ullamcorper, dolor nec accumsan viverra, libero eros rutrum metus, vel lacinia magna odio non nunc. Praesent semper felis eu rhoncus aliquam. Donec at quam ac libero vestibulum pretium. Nunc faucibus vel arcu in malesuada. Aenean at velit odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas commodo erat eget molestie sollicitudin. Donec imperdiet, ex sed blandit dictum, ipsum metus ultrices arcu, vitae euismod nisl sapien vitae tortor.</p>
+							<p>Pache Subversion (também conhecido como SVN) é um sistema de controle de versão de código aberto, criado em 2000 pela CollabNet e é atualmente um software mantido como um projeto da Apache Software Foundation. Foi desenvolvido para funcionar de forma similar ao CVS, mas corrigindo algumas falhas de seu antecessor e para prover algumas funcionalidades não existentes no CVS. O SVN é multiplataforma (tanto no que tange o servidor quanto os clientes) e pode ser usado por clientes com diferentes sistemas operacionais acessando um mesmo servidor que mantém o repositório.</p>
+							<p>O SVN é um sistema de versionamento flexível, que mantém o histórico mesmo após a ocorrência de eventos como mover, copiar ou renomear. Essas três características não estão presentes em muitos sistemas de controle de versão, mais notavelmente no CVS. Além disso, o SVN trabalha com o conceito e atomicidade nas operações, não permitindo operações parciais, que poderiam prejudicar a consistência do repositório.</p>
+							<p>A arquitetura proposta pelo SVN é semelhante à de um cliente-servidor, conforme ilustrado na Figura 1. No servidor temos os repositórios e os diversos clientes que acessam este repositório tanto para enviar quanto para receber atualizações. Cada usuário mantém uma cópia local do conjunto de arquivos que faz parte do projeto e sincroniza esses arquivos periodicamente com o servidor SVN. Do lado do servidor o administrador gerencia os repositórios e as permissões dos usuários de acordo com as necessidades do projeto. Já do lado do cliente o acesso ao repositório se dá por meio da configuração da localização do repositório, que pode ser um endereço local ou uma URL da internet, e da autenticação do usuário que recebeu previamente a permissão para acesso ao repositório, que pode ser só de leitura ou de leitura e escrita.</p>
+							
+							<p>É a evolução do modelo do CVS que resolve bem várias limitações do CVS, como a introdução dos comandos RENAME e MOVE, que não apenas renomeia/move o arquivo como mantém seu histórico de alterações, o comando COMMIT ser verdadeiramente atômico, suportando reollbacks em caso de falhas e versionamento de arquivos não suportados pelo CVS, como links simbólicos.</p>
+							<p>O SVN possui também a capacidade de guardar metadados dos arquivos e diretórios (extensões ignoradas, histórico de merges, etc...)</p>  
+							<p>O Subversion é um sistema de controle de versão centralizado que consiste em um cliente (o SVN) e um servidor central, acessado por meio de TCP/IP, geralmente via SSH ou HTTP/WebDAV. Desenvolvido inicialmente pela CollabNet no final de 2000, e integrante do projeto Apache desde 2010, o SVN foi adotado em muitos projetos da comunidade Java devido à sua integração com as ferramentas de desenvolvimento, além de resolver problemas do seu antecessor - o CVS - ao incluir o suporte transacional e melhorias de performance na comunicação entre cliente e servidor.</p>
 
-							<p>Vivamus nec odio ac ligula congue feugiat at vitae leo. Aenean sem justo, finibus sed dui eu, accumsan facilisis dolor. Fusce quis dui eget odio iaculis aliquam vel sed velit. Nulla pellentesque posuere semper. Nulla eu sagittis lorem, a auctor nulla. Sed ac condimentum orci, ac varius ante. Nunc blandit quam sit amet sollicitudin sodales.</p>
+							<p>SVN possui um repositório central de onde os usuários fazem o CHECKOUT e COMMIT dos artefatos versionados.</p>
 
-							<p>Vivamus ultricies mollis mauris quis molestie. Quisque eu mi velit. In et cursus nibh. Donec facilisis, orci sed mollis hendrerit, nunc risus mattis odio, eget efficitur nisl orci a lectus. Aenean finibus neque convallis orci sollicitudin tincidunt. Vivamus lacinia facilisis diam, quis facilisis nisi luctus nec. Aliquam ac molestie enim, ut ultrices elit. Fusce laoreet vulputate risus in tincidunt. Sed commodo mollis maximus. Nullam varius laoreet nibh sit amet facilisis. Donec ac odio vehicula, consequat elit et, sodales justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam ac auctor mauris, in hendrerit libero. </p>
+							<center><img class="imagem_artigo" src="http://arquivo.devmedia.com.br/REVISTAS/es/imagens/72/7/1.png" width="640"></center>
+			
+							<center><p><b>Figura 1</b> Diversos clientes acessam o mesmo repositório.</p></center>
+
+							<br>
+
+							<p>A ferramenta utilizada pelo desenvolvedor para atuar como cliente funciona através de linhas de comandos e pode ter ainda uma interface gráfica que permita a integração com o explorador de sistema de arquivos do sistema operacional utilizado. Caso seja utilizado no projeto um ambiente de desenvolvimento integrado (IDE, na sigla em inglês), é possível ainda a integração entre o cliente SVN e essa ferramenta, seja através de plug-ins ou suporte nativo da ferramenta.</p>
+
+							<p>A vantagem dessa abordagem é que você pode ter um controle central sobre os projetos, impor segurança de acesso mais facilmente. Além disso, há a possibilidade de bloquear arquivos (<i>lock</i>).</p>
+							<p>Porém, existem muitas desvantagens. A principal delas é que esse tipo de sistema não escala muito bem, isto é, muitas equipes e projetos no mesmo repositório tendem a deixá-lo lento. Outra desvantagem importante é que os usuários não podem fazer muita coisa <i>offline</i>, sendo necessário sempre estar conectado ao servidor central para realizar operações como criar <i>tags</i>, <i>branches</i>, fazer <i>merge</i>, etc.</p>
+					
+						
 						</div>
 					</div>
 				</div>
